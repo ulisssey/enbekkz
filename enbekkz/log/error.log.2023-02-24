@@ -1,0 +1,14 @@
+2023-02-24 14:57:07,828 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.

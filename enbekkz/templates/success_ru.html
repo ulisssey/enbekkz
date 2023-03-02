@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <title>Успех</title>
+</head>
+<body>   
+    <form action="{{url_for('start')}}">
+        <div class="action-form">
+        <p>Выгрузка завершена.</p>
+        {% if not people and not classes%}
+            <p>Файл сохранен в папке logs.</p>
+        {% endif %}
+        </div>
+        {% if people %}
+            <p>Следующие ученики не найдены:</p>
+            {% for i in people %}
+                <li>{{i}}</li>
+            {% endfor %}
+        {% endif %}
+        {% if classes %}
+            <p>Следующие классы не найдены:</p>
+            {% for i in classes %}
+                <li>{{i}}</li>
+            {% endfor %}
+        {% endif %}
+        <button type="submit">Вернуться назад</button>
+    </form>
+</body>
+</html>

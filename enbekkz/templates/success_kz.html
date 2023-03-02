@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <title>Сәтті</title>
+</head>
+<body>   
+    <form action="{{url_for('start')}}">
+        <div class="action-form">
+        <p>Жүктеу аяқталды.</p>
+        {% if not people and not classes%}
+            <p> Жүктеу файлы logs папкасында сақталды.</p>
+        {% endif %}
+        </div>
+        <div>
+        {% if people %}
+            <p>Келесі оқушылар табылмады:</p>
+                {% for i in people %}
+                    <li>{{i}}</li>
+                {% endfor %}
+        {% endif %}
+        {% if classes %}
+            <p>Келесі сыныптар табылмады:</p>
+                {% for i in classes %}
+                    <li>{{i}}</li>
+                {% endfor %}
+        {% endif %}
+        </div>
+        <button type="submit">Артқа қайту</button>
+    </form>
+</body>
+</html>

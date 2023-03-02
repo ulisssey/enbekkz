@@ -1,0 +1,312 @@
+2023-02-26 19:12:35,292 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.
+2023-02-26 19:54:15,173 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 93, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 427, in search_by_class
+    ws.column_dimensions[column_letter].number_format = numbers.FORMAT_TEXT
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\utils\bound_dictionary.py", line 25, in __getitem__
+    setattr(value, self.reference, key)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.worksheet.dimensions.ColumnDimension'>.index should be <class 'str'> but value is <class 'int'>
+2023-02-26 20:00:57,409 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 91, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 453, in search_by_class
+    ws.column_dimensions[column_letter].number_format = numbers.FORMAT_TEXT
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\utils\bound_dictionary.py", line 25, in __getitem__
+    setattr(value, self.reference, key)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.worksheet.dimensions.ColumnDimension'>.index should be <class 'str'> but value is <class 'int'>
+2023-02-26 20:03:06,529 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 91, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 453, in search_by_class
+    ws.column_dimensions[column_letter].number_format = numbers.FORMAT_TEXT
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\utils\bound_dictionary.py", line 25, in __getitem__
+    setattr(value, self.reference, key)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.worksheet.dimensions.ColumnDimension'>.index should be <class 'str'> but value is <class 'int'>
+2023-02-26 20:23:15,898 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 91, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 438, in search_by_class
+    wb.save(f'./logs/{day}.{month}.{year}_{hour}:{minute}:{second}_Отчет о выгрузке по классу каз.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: './logs/26.2.2023_20:22:53_Отчет о выгрузке по классу каз.xlsx'
+2023-02-26 20:24:03,791 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 91, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 438, in search_by_class
+    wb.save(f'./logs/{day}.{month}.{year}_{hour}:{minute}:{second}_Отчет о выгрузке по классу каз.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: './logs/26.2.2023_20:23:41_Отчет о выгрузке по классу каз.xlsx'
+2023-02-26 20:25:34,461 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 91, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 443, in search_by_class
+    wb.save(f'./logs/{day}.{month}.{year}_{hour}:{minute}:{second}_Отчет о выгрузке по классу каз.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: './logs/26.2.2023_20:25:11_Отчет о выгрузке по классу каз.xlsx'
+2023-02-26 20:26:08,485 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 73, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 284, in search_by_fio
+    wb.save(f'./logs/{day}.{month}.{year}_{hour}:{minute}:{second}_Отчет о выгрузке по ФИО каз.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: './logs/26.2.2023_20:25:51_Отчет о выгрузке по ФИО каз.xlsx'
+2023-02-26 20:27:37,230 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 279, in search_by_fio
+    ws.column_dimensions[column_letter].number_format = numbers.FORMAT_TEXT
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\utils\bound_dictionary.py", line 25, in __getitem__
+    setattr(value, self.reference, key)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.worksheet.dimensions.ColumnDimension'>.index should be <class 'str'> but value is <class 'int'>
+2023-02-26 20:29:05,127 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 272, in search_by_fio
+    ws.column_dimensions[column_letter].number_format = numbers.FORMAT_TEXT
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\utils\bound_dictionary.py", line 25, in __getitem__
+    setattr(value, self.reference, key)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\descriptors\base.py", line 46, in __set__
+    raise TypeError(msg)
+TypeError: <class 'openpyxl.worksheet.dimensions.ColumnDimension'>.index should be <class 'str'> but value is <class 'int'>
+2023-02-26 20:59:27,220 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 93, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 430, in search_by_class
+    wb.save(f'./logs/{day}.{month}.{year}_{hour}:{minute}:{second}_Отчет о выгрузке по классу рус.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: './logs/26.2.2023_20:59:4_Отчет о выгрузке по классу рус.xlsx'
+2023-02-26 21:24:38,924 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 93, in selenium_start
+    status = selenium_code.search_by_class(class_text, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 471, in search_by_class
+    wb = openpyxl.load_workbook(f'./logs/{day}{month}{year}_{hour}{minute}_Отчет о выгрузке по классу рус.xlsx')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\reader\excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './logs/2622023_2124_Отчет о выгрузке по классу рус.xlsx'

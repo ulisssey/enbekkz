@@ -1,0 +1,292 @@
+2023-03-01 08:58:57,419 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 51, in login
+    return render_template('login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2023-03-01 09:02:03,449 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 281, in search_by_fio
+    driver.find_element(By.XPATH, "//input[@id='search']").send_keys(fio)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='search']"}
+  (Session info: headless chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x007237D3]
+	(No symbol) [0x006B8B81]
+	(No symbol) [0x005BB36D]
+	(No symbol) [0x005ED382]
+	(No symbol) [0x005ED4BB]
+	(No symbol) [0x00623302]
+	(No symbol) [0x0060B464]
+	(No symbol) [0x00621215]
+	(No symbol) [0x0060B216]
+	(No symbol) [0x005E0D97]
+	(No symbol) [0x005E253D]
+	GetHandleVerifier [0x0099ABF2+2510930]
+	GetHandleVerifier [0x009C8EC1+2700065]
+	GetHandleVerifier [0x009CC86C+2714828]
+	GetHandleVerifier [0x007D3480+645344]
+	(No symbol) [0x006C0FD2]
+	(No symbol) [0x006C6C68]
+	(No symbol) [0x006C6D4B]
+	(No symbol) [0x006D0D6B]
+	BaseThreadInitThunk [0x76397D69+25]
+	RtlInitializeExceptionChain [0x77A2BB9B+107]
+	RtlClearBits [0x77A2BB1F+191]
+
+2023-03-01 09:03:10,132 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 281, in search_by_fio
+    driver.find_element(By.XPATH, "//input[@id='search']").send_keys(fio)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='search']"}
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x007237D3]
+	(No symbol) [0x006B8B81]
+	(No symbol) [0x005BB36D]
+	(No symbol) [0x005ED382]
+	(No symbol) [0x005ED4BB]
+	(No symbol) [0x00623302]
+	(No symbol) [0x0060B464]
+	(No symbol) [0x00621215]
+	(No symbol) [0x0060B216]
+	(No symbol) [0x005E0D97]
+	(No symbol) [0x005E253D]
+	GetHandleVerifier [0x0099ABF2+2510930]
+	GetHandleVerifier [0x009C8EC1+2700065]
+	GetHandleVerifier [0x009CC86C+2714828]
+	GetHandleVerifier [0x007D3480+645344]
+	(No symbol) [0x006C0FD2]
+	(No symbol) [0x006C6C68]
+	(No symbol) [0x006C6D4B]
+	(No symbol) [0x006D0D6B]
+	BaseThreadInitThunk [0x76397D69+25]
+	RtlInitializeExceptionChain [0x77A2BB9B+107]
+	RtlClearBits [0x77A2BB1F+191]
+
+2023-03-01 09:05:41,353 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 275, in search_by_fio
+    driver.find_element(By.XPATH, "//input[@id='search']").send_keys(fio)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='search']"}
+  (Session info: chrome=110.0.5481.178)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x007237D3]
+	(No symbol) [0x006B8B81]
+	(No symbol) [0x005BB36D]
+	(No symbol) [0x005ED382]
+	(No symbol) [0x005ED4BB]
+	(No symbol) [0x00623302]
+	(No symbol) [0x0060B464]
+	(No symbol) [0x00621215]
+	(No symbol) [0x0060B216]
+	(No symbol) [0x005E0D97]
+	(No symbol) [0x005E253D]
+	GetHandleVerifier [0x0099ABF2+2510930]
+	GetHandleVerifier [0x009C8EC1+2700065]
+	GetHandleVerifier [0x009CC86C+2714828]
+	GetHandleVerifier [0x007D3480+645344]
+	(No symbol) [0x006C0FD2]
+	(No symbol) [0x006C6C68]
+	(No symbol) [0x006C6D4B]
+	(No symbol) [0x006D0D6B]
+	BaseThreadInitThunk [0x76397D69+25]
+	RtlInitializeExceptionChain [0x77A2BB9B+107]
+	RtlClearBits [0x77A2BB1F+191]
+
+2023-03-01 09:07:26,551 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 75, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'ru')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 272, in search_by_fio
+    status = main_code()
+             ^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 46, in main_code
+    driver.get("https://login.kundelik.kz/login")
+    ^^^^^^
+NameError: name 'driver' is not defined
+2023-03-01 09:19:59,774 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 70, in selenium_start
+    if ',' in fio:
+       ^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+2023-03-01 09:44:54,944 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.
+2023-03-01 09:53:11,287 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 86, in selenium_start
+    if status == 'excel_error_ru':
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'status' where it is not associated with a value
+2023-03-01 10:01:41,908 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 86, in selenium_start
+    if status == 'excel_error_ru':
+       ^^^^^^
+UnboundLocalError: cannot access local variable 'status' where it is not associated with a value

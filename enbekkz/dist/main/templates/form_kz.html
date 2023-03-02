@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <title>Жүктеу</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                function submitForm(event) {
+                    event.preventDefault(); // prevent the default form submission behavior
+                    var form = event.target;
+                    var message = '{{ messages[0] }}';
+                    var formData = new FormData(form);
+                    fetch('/selenium-start', {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => {
+                        // handle the response from the Selenium view function
+                        console.log(response);
+                        // show a success message to the user
+                        alert(message);
+                    }).catch(error => {
+                        // handle errors
+                        console.error(error);
+                    });
+                }
+            </script> 
+        {%else%}
+            <script>
+                function submitForm(event) {
+                    event.preventDefault(); // prevent the default form submission behavior
+                    var form = event.target;
+                    var formData = new FormData(form);
+                    fetch('/selenium-start', {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => {
+                        // handle the response from the Selenium view function
+                        console.log(response);
+                        // show a success message to the user
+                    }).catch(error => {
+                        // handle errors
+                        console.error(error);
+                    });
+                }
+            </script>
+        {% endif %}
+    {% endwith %}   
+    <!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                window.addEventListener('load', function () {
+                var message = '{{ messages[0] }}';
+                if (message) {
+                    showFlashMessage(message);
+                }
+                });
+        
+                function showFlashMessage(message) {
+                // Show the message using your preferred method, e.g. an alert box or a toast notification
+                alert(message);
+                }
+            </script>
+        {% endif %}
+    {% endwith %}   -->
+    <div class="action-form">
+        <form onsubmit="submitForm(event)" method="post">
+            <label for="fio">Аты жөні</label>
+            <input type="text" id="fio" name="fio">
+            <label for="class">Сынып</label>
+            <input type="text" id="class" name="class">
+            <input name="check" id="html" type="checkbox">
+            <label for="html">Жалпы жүктеу</label>
+
+            <button type="submit" >Жүктеу</button>
+        </form>
+        <form action="/language" method="post">
+            <select name="language">
+              <option value="ru">Русский</option>
+            </select>
+            <button type="submit">Поменять язык</button>
+        </form>          
+    </div>
+    <!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %} -->
+</body>
+</html>

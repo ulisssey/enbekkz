@@ -1,0 +1,53 @@
+2023-02-22 09:41:20,419 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1823, in full_dispatch_request
+  File "flask\app.py", line 1842, in finalize_request
+  File "flask\app.py", line 2134, in make_response
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.
+2023-02-22 14:01:48,103 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1822, in full_dispatch_request
+  File "flask\app.py", line 1820, in full_dispatch_request
+  File "flask\app.py", line 1796, in dispatch_request
+  File "main.py", line 74, in selenium_start
+  File "selenium_code.py", line 180, in get_all
+  File "selenium_code.py", line 41, in main_code
+  File "selenium\webdriver\remote\webdriver.py", line 449, in get
+  File "selenium\webdriver\remote\webdriver.py", line 440, in execute
+  File "selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: headless chrome=110.0.5481.104)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00CE37D3]
+	(No symbol) [0x00C78B81]
+	(No symbol) [0x00B7B36D]
+	(No symbol) [0x00B7772D]
+	(No symbol) [0x00B6DC65]
+	(No symbol) [0x00B6F033]
+	(No symbol) [0x00B6DF02]
+	(No symbol) [0x00B6D324]
+	(No symbol) [0x00B6D241]
+	(No symbol) [0x00B6BC95]
+	(No symbol) [0x00B6C518]
+	(No symbol) [0x00B7CF4C]
+	(No symbol) [0x00BE1E01]
+	(No symbol) [0x00BCB41C]
+	(No symbol) [0x00BE1215]
+	(No symbol) [0x00BCB216]
+	(No symbol) [0x00BA0D97]
+	(No symbol) [0x00BA253D]
+	GetHandleVerifier [0x00F5ABF2+2510930]
+	GetHandleVerifier [0x00F88EC1+2700065]
+	GetHandleVerifier [0x00F8C86C+2714828]
+	GetHandleVerifier [0x00D93480+645344]
+	(No symbol) [0x00C80FD2]
+	(No symbol) [0x00C86C68]
+	(No symbol) [0x00C86D4B]
+	(No symbol) [0x00C90D6B]
+	BaseThreadInitThunk [0x757A7D69+25]
+	RtlInitializeExceptionChain [0x779FBB9B+107]
+	RtlClearBits [0x779FBB1F+191]
+

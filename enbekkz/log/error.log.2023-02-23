@@ -1,0 +1,28 @@
+2023-02-23 10:07:07,122 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\main.py", line 78, in selenium_start
+    status = selenium_code.search_by_fio(fio, 'kz')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\erasy\projects\enbekkz\selenium_code.py", line 286, in search_by_fio
+    wb.save(f'./logs/{day}{month}{year}_Отчет о выгрузке по ФИО каз.xlsx')
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\erasy\projects\enbekkz\env\Lib\site-packages\openpyxl\writer\excel.py", line 302, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erasy\AppData\Local\Programs\Python\Python311\Lib\zipfile.py", line 1281, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './logs/2322023_Отчет о выгрузке по ФИО каз.xlsx'

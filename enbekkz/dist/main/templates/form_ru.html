@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <title>Выгрузка</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                function submitForm(event) {
+                    event.preventDefault(); // prevent the default form submission behavior
+                    var form = event.target;
+                    var message = '{{ messages[0] }}';
+                    var formData = new FormData(form);
+                    fetch('/selenium-start', {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => {
+                        // handle the response from the Selenium view function
+                        console.log(response);
+                        // show a success message to the user
+                        alert(message);
+                    }).catch(error => {
+                        // handle errors
+                        console.error(error);
+                    });
+                }
+            </script> 
+        {%else%}
+            <script>
+                function submitForm(event) {
+                    event.preventDefault(); // prevent the default form submission behavior
+                    var form = event.target;
+                    var formData = new FormData(form);
+                    fetch('/selenium-start', {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => {
+                        // handle the response from the Selenium view function
+                        console.log(response);
+                        // show a success message to the user
+                    }).catch(error => {
+                        // handle errors
+                        console.error(error);
+                    });
+                }
+            </script>
+        {% endif %}
+    {% endwith %}    
+    <div class="action-form">
+        <form onsubmit="submitForm(event)" method="post">
+            <label for="fio">ФИО</label>
+            <input type="text" id="fio" name="fio">
+            <label for="class">Класс</label>
+            <input type="text" id="class" name="class">
+            <input name="check" id="html" type="checkbox">
+            <label for="html">Массовая выгрузка</label>
+
+            <button type="submit" >Выгрузить</button>
+        </form>
+        <form action="/language" method="post">
+            <select name="language">
+              <option value="kz">Қазақ</option>
+            </select>
+            <button type="submit">Тілді ауыстыру</button>
+        </form>          
+    </div>       
+</body>
+</html>

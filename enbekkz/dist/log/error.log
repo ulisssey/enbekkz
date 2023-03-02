@@ -1,0 +1,7 @@
+2023-02-24 14:53:59,786 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1823, in full_dispatch_request
+  File "flask\app.py", line 1842, in finalize_request
+  File "flask\app.py", line 2134, in make_response
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.

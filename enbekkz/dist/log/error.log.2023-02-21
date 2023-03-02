@@ -1,0 +1,44 @@
+2023-02-21 16:15:54,098 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1822, in full_dispatch_request
+  File "flask\app.py", line 1820, in full_dispatch_request
+  File "flask\app.py", line 1796, in dispatch_request
+  File "main.py", line 47, in start
+  File "flask\templating.py", line 146, in render_template
+  File "jinja2\environment.py", line 1081, in get_or_select_template
+  File "jinja2\environment.py", line 1010, in get_template
+  File "jinja2\environment.py", line 969, in _load_template
+  File "jinja2\loaders.py", line 126, in load
+  File "flask\templating.py", line 62, in get_source
+  File "flask\templating.py", line 98, in _get_source_fast
+jinja2.exceptions.TemplateNotFound: form_ru.html
+2023-02-21 16:16:59,701 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1822, in full_dispatch_request
+  File "flask\app.py", line 1820, in full_dispatch_request
+  File "flask\app.py", line 1796, in dispatch_request
+  File "main.py", line 47, in start
+  File "flask\templating.py", line 146, in render_template
+  File "jinja2\environment.py", line 1081, in get_or_select_template
+  File "jinja2\environment.py", line 1010, in get_template
+  File "jinja2\environment.py", line 969, in _load_template
+  File "jinja2\loaders.py", line 126, in load
+  File "flask\templating.py", line 62, in get_source
+  File "flask\templating.py", line 98, in _get_source_fast
+jinja2.exceptions.TemplateNotFound: form_ru.html
+2023-02-21 16:19:59,368 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1823, in full_dispatch_request
+  File "flask\app.py", line 1842, in finalize_request
+  File "flask\app.py", line 2134, in make_response
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.
+2023-02-21 16:48:57,188 - ERROR - Exception on /selenium-start [POST]
+Traceback (most recent call last):
+  File "flask\app.py", line 2525, in wsgi_app
+  File "flask\app.py", line 1823, in full_dispatch_request
+  File "flask\app.py", line 1842, in finalize_request
+  File "flask\app.py", line 2134, in make_response
+TypeError: The view function for 'selenium_start' did not return a valid response. The function either returned None or ended without a return statement.
